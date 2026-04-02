@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты</title>
+  <meta name="description" content="Контакты, форма заявки и способы связи.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><strong>Дизайн-центр «Бином»</strong><span>Проектирование, автоматизация, ПО и испытания</span></span>
+    </a>
+    <button class="mobile-toggle" aria-label="Открыть меню" data-mobile-toggle>☰</button>
+    <nav class="nav-links" data-nav-links>
+      <div class="nav-item">
+        <button class="drop-toggle">Услуги</button>
+        <div class="dropdown"><a href="services/automation.html">Автоматизация<span>АСУ, шкафы управления, внедрение и пусконаладка</span></a>
+<a href="services/development.html">Разработка ПО и ИС<span>Веб-системы, панели оператора, прикладное ПО и аналитика</span></a>
+<a href="services/vr-ar.html">VR/AR<span>Интерактивные обучающие и демонстрационные решения</span></a>
+<a href="services/docs.html">Техническая документация<span>КД, ТУ, ПМИ, эксплуатационные и ремонтные документы</span></a>
+<a href="services/education.html">Образовательные услуги<span>Повышение квалификации и консультации под задачи заказчика</span></a>
+<a href="services/equipment.html">Оснащение центра<span>Испытательные комплексы, измерительное и генераторное оборудование</span></a></div>
+      </div>
+      <div class="nav-item">
+        <button class="drop-toggle">Наши проекты</button>
+        <div class="dropdown"><a href="projects/press-automation.html">Прессовые установки<span>Автоматизация гранулирования, миксирования и смежных процессов</span></a>
+<a href="projects/software-projects.html">Программные проекты<span>Панели оператора, мониторинг и аналитические системы</span></a>
+<a href="projects/drone-projects.html">Работы с БПЛА<span>Аэрофотосъемка, 3D-модели и испытательные полеты</span></a></div>
+      </div>
+      <a class="nav-link" href="about.html">О центре</a>
+      <a class="nav-link" href="team.html">Команда</a>
+      <a class="nav-link" href="contacts.html">Контакты</a>
+      <a class="cta-small" href="contacts.html#request">Заказать проект</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="page-hero hero-image" style="background-image:url('assets/img/contacts-map.png');">
+  <div class="container">
+    <div class="eyebrow">Технологические решения для заказчиков</div>
+    <h1>Контакты</h1>
+    <p>Если вам нужен опытный образец, автоматизация, программный продукт, учебный курс или инженерная консультация, свяжитесь с нами любым удобным способом.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="contact-box reveal">
+      <h2 class="section-title" style="font-size:34px;">Связаться с нами</h2>
+      <div class="contact-list">
+        <a href="tel:+79277229081"><strong>Телефон:</strong>&nbsp;+7 927 722 90 81</a>
+        <a href="mailto:rtultd@yandex.ru"><strong>Email:</strong>&nbsp;rtultd@yandex.ru</a>
+        <div><strong>Адрес:</strong>&nbsp;г. Самара, ул. Первомайская, д. 1</div>
+        <div><strong>Режим связи:</strong>&nbsp;по будням, по предварительной договоренности</div>
+      </div>
+    </div>
+    <div class="map-card reveal"><iframe class="contact-map" src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BC%D0%B0%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%2C%201" loading="lazy" title="Карта"></iframe></div>
+  </div>
+</section>
+<section class="section-tight" id="request">
+  <div class="container contact-box reveal">
+    <div class="eyebrow">Форма заявки</div>
+    <h2 class="section-title" style="font-size:40px;">Заказать разработку</h2>
+    <p class="lead">Оставьте контакты и кратко опишите задачу. Мы используем короткую форму, чтобы с вами можно было быстро связаться и уточнить детали проекта.</p>
+    <form class="form-grid" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="hidden" name="_subject" value="Новая заявка с сайта Бином">
+      <input class="input" type="email" name="email" placeholder="Email" required>
+      <input class="input" type="text" name="name" placeholder="Имя" required>
+      <input class="input" type="tel" name="phone" placeholder="Телефон">
+      <textarea class="input" name="message" placeholder="Описание заказа или вопроса"></textarea>
+      <button class="btn" type="submit" style="border:none; cursor:pointer; width:max-content;">Отправить заявку</button>
+    </form>
+    <p class="form-note">Нажимая на кнопку, пользователь подтверждает согласие на обработку персональных данных и принимает условия, описанные в <a href="privacy.html" style="color:var(--primary);">политике конфиденциальности</a>.</p>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© <span data-year></span> Дизайн-центр микроэлектроники «Бином»</div>
+    <div class="footer-links">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О центре</a>
+      <a href="team.html">Команда</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="privacy.html">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
