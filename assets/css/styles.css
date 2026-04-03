@@ -87,18 +87,6 @@ img { max-width: 100%; display: block; }
   height: 100%;
   object-fit: contain;
 }
-.brand-mark::before,
-.brand-mark::after {
-  content: "";
-  position: absolute;
-  inset: 10px;
-  border: 2px solid rgba(255,255,255,.85);
-  border-radius: 9px;
-}
-.brand-mark::after {
-  inset: 16px;
-  border-radius: 6px;
-}
 .brand-text strong { display: block; font-size: 16px; }
 .brand-text span { display: block; font-size: 12px; opacity: .78; }
 .nav-links {
