@@ -75,12 +75,17 @@ img { max-width: 100%; display: block; }
   color: var(--white);
 }
 .brand-mark {
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, var(--accent), var(--primary));
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.28), 0 10px 25px rgba(73,136,222,.28);
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* можно 48 */
+  height: 40px;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .brand-mark::before,
 .brand-mark::after {
