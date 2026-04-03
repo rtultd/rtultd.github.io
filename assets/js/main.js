@@ -26,4 +26,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const yearEls = document.querySelectorAll('[data-year]');
   yearEls.forEach(el => el.textContent = new Date().getFullYear());
+
+  const formSuccess = document.querySelector('[data-form-success]');
+  if (formSuccess) {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('sent') === '1') {
+      formSuccess.hidden = false;
+    }
+  }
 });
+
+  const formSuccess = document.querySelector('[data-form-success]');
+  if (formSuccess) {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('sent') === '1') {
+      formSuccess.hidden = false;
+    }
+  }
